@@ -1,0 +1,124 @@
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* important to center vertically */
+  padding: 8px 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-left input[type="search"] {
+  background-color: #f0f2f5;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.nav-middle {
+  display: flex;
+  gap: 9vw;
+  align-items: start;
+  width: 43%;
+  /* to vertically center icons */
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  /* center notice icons + avatar */
+  gap: 2vw;
+}
+
+.nav-middle svg,
+.right svg {
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.nav-middle svg:hover,
+.right svg:hover {
+  color: #3b82f6;
+}
+
+
+
+/* Profile img styling */
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .nav-middle {
+    display: none;
+  }
+}
+
+/* Common link style */
+.nav-middle a,
+.right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  /* adjust as needed */
+  height: 50px;
+  border-radius: 10px;
+  /* rounded square background */
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+/* Default icon color */
+.nav-middle svg,
+.right svg {
+  color: #555;
+  font-size: 26px;
+}
+
+/* Hover effect */
+.nav-middle a:hover,
+.right a:hover {
+  background: #f3f4f6;
+  /* light gray hover */
+}
+
+.nav-middle a:hover svg,
+.right a:hover svg {
+  color: #556FF2;
+}
+
+/* Active state */
+.nav-middle a.active,
+.right a.active {
+  background: #f3f4f6;
+  /* light blue background */
+}
+
+.nav-middle a.active svg,
+.right a.active svg {
+  color: #556FF2;
+  /* blue icon */
+}
+
+.custom-popover {
+  position: absolute !important;
+  top: -70px !important;
+  left: -20px !important;
+}

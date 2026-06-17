@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #EEF3FF;
+}
+
+.Signup .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Card styling */
+.SignupCard {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 380px;
+}
+
+.SignupCard .cardHeader {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.SignupCard span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.SignupCard hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Input styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="username"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Radio buttons styled like cards */
+.name-fields {
+  display: flex;
+  gap: 8px;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+/* Gender in row */
+.gender-options {
+  display: flex;
+  gap: 8px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.gender-option {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.gender-option input {
+  margin-left: 8px;
+}
+
+/* Selected state */
+.gender-option--selected {
+  border-color: #6675f1;
+  /* bluish border */
+}
+
+/* Hover */
+.gender-option:hover {
+  border-color: #a0abf8;
+}
+
+.FieldError {
+  color: #d8000c;
+  font-size: 12px;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.info-text a {
+  color: #1877f2; /* Facebook-like blue links */
+  text-decoration: none;
+}
+
+.info-text a:hover {
+  text-decoration: underline;
+}
+
+.login-link {
+  margin-top: 16px;
+  text-align: center;
+  color: #1877f2; /* same blue link */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

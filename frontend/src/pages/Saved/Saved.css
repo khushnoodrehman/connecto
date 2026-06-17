@@ -1,0 +1,117 @@
+/* Saved.css */
+.saved-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 10px 0 30px;
+}
+
+.saved-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  border: 1px solid #f0f2f5;
+}
+
+.saved-icon-wrapper {
+  background: linear-gradient(135deg, #1877f2 0%, #0056b3 100%);
+  color: white;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3);
+}
+
+.saved-header-text h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #050505;
+}
+
+.saved-header-text p {
+  margin: 2px 0 0 0;
+  font-size: 0.9rem;
+  color: #65676b;
+  font-weight: 500;
+}
+
+.saved-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.saved-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #f0f2f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.empty-icon-container {
+  background: #f0f2f5;
+  color: #8c98a5;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.saved-empty-state:hover .empty-icon-container {
+  transform: scale(1.05);
+  color: #1877f2;
+  background: rgba(24, 119, 242, 0.08);
+}
+
+.saved-empty-state h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #050505;
+  margin-bottom: 8px;
+}
+
+.saved-empty-state p {
+  font-size: 0.95rem;
+  color: #65676b;
+  max-width: 380px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.go-to-feed-btn {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(24, 119, 242, 0.2);
+}
+
+.go-to-feed-btn:hover {
+  background: #1565c0;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(24, 119, 242, 0.3);
+}

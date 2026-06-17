@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  height: 100vh;
+  background-color: #EEF3FF;
+  font-family: Arial, sans-serif;
+}
+
+/* Card styling */
+.LoginCard {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Input fields style */
+.LoginCard input[type="email"],
+.LoginCard input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button like signup */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.smallLink {
+  font-size: 12px;
+  color: #1877f2;
+  margin-top: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.smallLink:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+/* Layout.css */
+.main-content {
+  margin-left: 300px;
+  padding: 20px;
+  min-height: calc(100vh - 60px); /* Changed from height to min-height */
+  background-color: #F9FAFB;
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.main-content.profile-layout {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+/* medium screens: Sidebar only */
+@media (max-width: 1200px) {
+  .main-content {
+    margin-left: 280px;
+    margin-right: 0;
+    width: calc(100% - 280px); /* Ensure proper width calculation */
+  }
+}
+
+/* mobile: no sidebars */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}

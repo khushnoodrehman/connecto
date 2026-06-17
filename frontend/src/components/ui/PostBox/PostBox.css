@@ -1,0 +1,105 @@
+.PostBox {
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  width: 80vh;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.post-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  outline: none;
+  cursor: pointer;
+}
+
+.post-input:hover {
+  background-color: #e5e7eb;
+}
+
+.post-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-bottom label:hover {
+  background: #e5e7eb;
+  border-radius: 5px;
+}
+
+.post-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.post-option:hover {
+  background-color: #f0f2f5;
+}
+
+.post-icon {
+  color: #45bd62; /* green like Facebook Photo icon */
+  font-size: 20px;
+}
+
+.custom-modal .modal-dialog {
+  max-height: 80vh; 
+}
+
+.custom-modal .modal-content {
+  height: 70%;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+/* Add to PostBox.css */
+.image-preview {
+  position: relative;
+  display: inline-block;
+}
+
+.del {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(252, 252, 252, 0.6);
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  z-index: 1;
+  transition: all 0.2s ease;
+}

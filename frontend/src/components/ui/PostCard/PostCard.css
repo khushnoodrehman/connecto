@@ -1,0 +1,54 @@
+.PostCard {
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 8px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 20px !important;
+    width: 80vh;
+    margin: auto;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+  margin: 0 16px;
+}
+
+.action-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #65676b; /* Facebook grey */
+  padding: 6px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-item:hover {
+  background-color: #f0f2f5;  /* light hover gray */
+}
+
+.action-item svg {
+  color: #65676b;  /* icon color */
+  font-size: 18px; 
+}
+
+.Media {
+    border-radius: 8px;
+}
+
+.custom-modal {
+  max-width: 700px !important; /* increase width as needed */
+}
+
+.custom-modal .modal-content {
+  height: 90vh;       /* adjust height */
+}
